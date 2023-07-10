@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content%}
+  <h2>Add Book in Library</h2>
+
+  <form method='post'>
+    {% csrf_token %}
+    <label>Book Name:</label>
+    <input type='text' name='nm' required><br><br>
+
+    <label>Book Price:</label>
+    <input type='number' name='prc' required><br><br>
+
+    <label>Book Quantity:</label>
+    <input type='number' name='qty' required><br><br>
+
+    <label>Book Is Published:</label>
+    Yes <input type='radio' value = "Yes" name='ispub' checked>&nbsp;&nbsp;&nbsp;&nbsp;
+    No <input type='radio' value = 'No' name='ispub'>&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <label>Book Is Active:</label>
+    Yes <input type='radio'  value = "Yes" name='isact' checked>&nbsp;&nbsp;&nbsp;&nbsp;
+    No <input type='radio' value="No" name='isact'>&nbsp;&nbsp;&nbsp;&nbsp; <br> <br>
+
+    <input type='submit' class="btn btn-primary">
+  </form>
+{% endblock %}

@@ -1,0 +1,26 @@
+/* styles.css */
+
+/* Heading style */
+h1 {
+    font-size: 36px;
+    color: #bc5617;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  /* Body style */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #F4F4F4;
+    color: #791313;
+    padding: 20px;
+  }
+  
+  /* Title style */
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0066CC;
+    margin-bottom: 10px;
+  }
+  
